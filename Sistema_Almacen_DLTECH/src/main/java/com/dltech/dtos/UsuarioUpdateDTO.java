@@ -6,13 +6,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class UsuarioUpdateDTO {
-    private long idUsuario;
-
+    private Long idUsuario;
     private String nomApe;
-
     private String usuario;
-
     private String clave;
-
     private String bContraseña;
 }

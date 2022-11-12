@@ -7,10 +7,7 @@ import lombok.Setter;
 @Setter
 public class UsuarioCreateDTO {
     private String nomApe;
-
     private String usuario;
-
     private String clave;
-
     private String bContraseña;
 }
