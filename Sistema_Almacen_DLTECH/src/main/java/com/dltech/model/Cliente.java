@@ -22,12 +22,6 @@ public class Cliente {
     @Column(length = 100, nullable = false)
     private String nomApe;
 
-    //Relación con la tabla tb_tipoDocumentos
-    @ManyToOne
-    @JoinColumn(name = "idTipoDocumentoIdentidad")
-    private TipoDocumentoIdentidad tipoDocumentoIdentidad;
-    //private Long idTipoDocumentoIdentidad; //Tabla tipoDocumentoIdentidad
-
     @Column(length = 12, nullable = false)
     private String docIdent;
 
@@ -37,11 +31,6 @@ public class Cliente {
     @Column(length = 100, nullable = false)
     private String direccion;
 
-    //Relación con la tabla tb_distritos
-    @ManyToOne
-    @JoinColumn(name = "idDistrito")
-    private Distrito distrito;
-
     @Column(length = 7, nullable = false)
     private String telefono;
 
@@ -50,4 +39,14 @@ public class Cliente {
 
     @Column(length = 100, nullable = false)
     private String correo;
+
+    //Relación con la tabla tb_distritos
+    @ManyToOne
+    @JoinColumn(name = "idDistrito")
+    private Distrito distrito;
+
+    //Relación con la tabla tb_tipoDocumentos
+    @ManyToOne
+    @JoinColumn(name = "idTipoDocumentoIdentidad")
+    private TipoDocumentoIdentidad tipoDocumentoIdentidad;
 }

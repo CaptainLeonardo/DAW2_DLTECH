@@ -14,16 +14,12 @@ import javax.persistence.OneToOne;
 public class ClienteCreateDTO {
 
     private String nomApe;
-    @ManyToOne
-    @JoinColumn(name = "idTipoDocumentoIdentidad")
-    private TipoDocumentoIdentidad tipoDocumentoIdentidad;
     private String docIdent;
     private String ruc;
     private String direccion;
-    @ManyToOne
-    @JoinColumn(name = "idDistrito")
-    private Distrito distrito;
     private String telefono;
     private String celular;
     private String correo;
+    private Distrito distrito;
+    private TipoDocumentoIdentidad tipoDocumentoIdentidad;
 }

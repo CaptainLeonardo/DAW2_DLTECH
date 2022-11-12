@@ -13,9 +13,9 @@ public interface ClienteMapper {
     ClienteMapper INSTANCIA = Mappers.getMapper(ClienteMapper.class);
 
     ClienteDTO clienteAClienteDTO(Cliente cliente);
-    //Cliente clienteDTOACliente(ClienteDTO clienteDTO);
-    //Cliente clienteCreateDTOACliente(ClienteCreateDTO clienteCreateDTO);
-    //Cliente clienteUpdateDTOACliente(ClienteUpdateDTO clienteUpdateDTO);
+    Cliente clienteDTOACliente(ClienteDTO clienteDTO);
+    Cliente clienteCreateDTOACliente(ClienteCreateDTO clienteCreateDTO);
+    Cliente clienteUpdateDTOACliente(ClienteUpdateDTO clienteUpdateDTO);
 
     List<ClienteDTO> listarClienteAListarClienteDTO(List<Cliente> listaCliente);
 }
