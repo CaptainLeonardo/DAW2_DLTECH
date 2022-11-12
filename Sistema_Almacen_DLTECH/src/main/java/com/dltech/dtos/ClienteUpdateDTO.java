@@ -15,7 +15,7 @@ public class ClienteUpdateDTO {
 
     private Long idCliente;
     private String nomApe;
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "idTipoDocumentoIdentidad")
     private TipoDocumentoIdentidad tipoDocumentoIdentidad;
     private String docIdent;

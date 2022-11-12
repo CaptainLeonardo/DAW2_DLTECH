@@ -23,7 +23,7 @@ public class Cliente {
     private String nomApe;
 
     //Relación con la tabla tb_tipoDocumentos
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "idTipoDocumentoIdentidad")
     private TipoDocumentoIdentidad tipoDocumentoIdentidad;
     //private Long idTipoDocumentoIdentidad; //Tabla tipoDocumentoIdentidad
