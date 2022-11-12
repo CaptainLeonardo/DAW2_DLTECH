@@ -5,13 +5,14 @@ import com.dltech.model.TipoDocumentoIdentidad;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 @Getter
 @Setter
-public class ClienteDTO {
+public class ClienteCreateDTO {
 
-    private Long idCliente;
     private String nomApe;
     @OneToOne
     @JoinColumn(name = "idTipoDocumentoIdentidad")
