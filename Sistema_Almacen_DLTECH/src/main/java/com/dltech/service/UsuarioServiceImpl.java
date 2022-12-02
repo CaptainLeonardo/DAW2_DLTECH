@@ -1,12 +1,9 @@
 package com.dltech.service;
 
-import com.dltech.dtos.ProductoDTO;
 import com.dltech.dtos.UsuarioCreateDTO;
 import com.dltech.dtos.UsuarioDTO;
 import com.dltech.dtos.UsuarioUpdateDTO;
-import com.dltech.mappers.ProductoMapper;
 import com.dltech.mappers.UsuarioMapper;
-import com.dltech.model.Producto;
 import com.dltech.model.Usuario;
 import com.dltech.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;

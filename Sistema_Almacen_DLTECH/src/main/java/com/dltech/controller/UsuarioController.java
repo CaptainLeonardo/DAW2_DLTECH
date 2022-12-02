@@ -1,10 +1,7 @@
 package com.dltech.controller;
 
 import com.dltech.dtos.*;
-import com.dltech.model.Usuario;
-import com.dltech.service.ProductoService;
 import com.dltech.service.UsuarioService;
-import com.dltech.service.UsuarioServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
