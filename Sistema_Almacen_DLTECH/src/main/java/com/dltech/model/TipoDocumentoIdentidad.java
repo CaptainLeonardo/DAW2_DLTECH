@@ -17,7 +17,7 @@ public class TipoDocumentoIdentidad {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idTipoDocumentoIndetidad;
+    private Long idTipoDocumentoIdentidad;
 
     @Column(length = 50, nullable = false)
     private String desTipoDocumento;
