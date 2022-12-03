@@ -12,7 +12,7 @@ public class ProductoUpdateDTO {
     private Long idProducto;
     private String descripcion;
     private String modelo;
-    private Categoria idCategoria;
-    private EstadoProducto idEstadoP;
-    private Marca idMarca;
+    private Categoria categoria;
+    private EstadoProducto estadoProducto;
+    private Marca marca;
 }

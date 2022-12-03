@@ -26,13 +26,13 @@ public class Producto {
 
     @ManyToOne
     @JoinColumn(name = "idCategoria")
-    private Categoria idCategoria;
+    private Categoria categoria;
 
     @ManyToOne
     @JoinColumn(name = "idEstadoP")
-    private EstadoProducto idEstadoP;
+    private EstadoProducto estadoProducto;
 
     @ManyToOne
     @JoinColumn(name = "idMarca")
-    private Marca idMarca;
+    private Marca marca;
 }
