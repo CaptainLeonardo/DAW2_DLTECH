@@ -7,6 +7,9 @@ import com.dltech.mappers.UsuarioMapper;
 import com.dltech.model.Usuario;
 import com.dltech.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+//import com.security.config.WebSecurityConfig.*;
+import org.springframework.beans.factory.annotation.Qualifier;
+//import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +20,9 @@ public class UsuarioServiceImpl implements UsuarioService{
 
     @Autowired
     private UsuarioRepository usuarioRepository;
+
+//    @Autowired
+//    private PasswordEncoder passwordEncoder;
 
     @Override
     public List<UsuarioDTO> listarUsuarios() {
